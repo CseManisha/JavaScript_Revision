@@ -99,4 +99,73 @@ const re=outer()
 re()
 */
 
+// count function
+/*
+function  outer (){
+let count=0
 
+  function inner(){
+    count=count+1;
+    console.log(count)
+
+  }
+  return inner;
+
+}
+console.log("code run")
+const tCount=outer()
+tCount();
+tCount()
+
+// this --- refers to the object that calling the function
+const user={
+name: 'manisha',
+
+ greet(){
+    console.log(this.name)
+ }
+
+}
+// this in arrow function
+
+const user = {
+    name: "Manisha",
+
+    greet: () => {
+        console.log(this.name);
+    }
+};
+
+user.greet();
+*/
+
+
+// call back --> a callback is a function passed to another function as an argument
+
+function greet(name){
+    console.log('hello '+ name);
+}
+function processUser(callback){
+    callback("manisha");
+}
+processUser(greet)
+
+function sayHello(){
+    console.log("hello")
+}
+function execute(callback){
+    callback()
+}
+
+execute(sayHello)
+
+function calculate(a,b,callback){
+    const re=a+b;
+    callback(re);
+    console.log("run")
+}
+function showRe(re){
+    console.log(re);
+
+}
+calculate(10,20, showRe)
