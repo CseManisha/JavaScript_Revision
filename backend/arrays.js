@@ -1,5 +1,5 @@
 // problem --. find two numbers whose sum equals the target
-
+/*
 let nums=[2,6,2,15,6,3,4];
 let target=9;
 
@@ -38,4 +38,30 @@ console.log(min)
 console.log(Math.max(...nums))
 console.log(Math.min(...nums))
 
+*/
 
+// reverse array
+
+let day=[1,2,3,4,5,6,7]
+
+let revArr=[];
+for(let i=day.length -1;i>=0;i--){
+    if(i===3){
+        i-- //skip value
+    }
+    revArr.push(day[i]);
+}
+console.log(revArr)
+
+// frequency count
+
+let nums=[1,2,2,3,1,2,4]
+let frequency={};
+for(let num of nums){
+    if(frequency[num]){
+        frequency[num]++;
+    }else{
+        frequency[num]=1;
+    }
+}
+console.log(frequency);
