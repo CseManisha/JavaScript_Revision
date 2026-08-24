@@ -38,7 +38,7 @@ console.log(min)
 console.log(Math.max(...nums))
 console.log(Math.min(...nums))
 
-*/
+
 
 // reverse array
 
@@ -73,3 +73,17 @@ for (let i = 1; i <= 5; i++) {
         console.log(i);
     }
 }
+    */
+
+// move zeroes at the end
+let vals=[0,1,0,3,12,4]
+let result1=[];
+for (let val of vals){
+    if(val!==0){
+        result1.push(val);
+    }
+}
+while (result1.length<vals.length){
+    result1.push(0);
+}
+console.log(result1,result1.sort())
