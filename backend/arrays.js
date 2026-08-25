@@ -73,7 +73,7 @@ for (let i = 1; i <= 5; i++) {
         console.log(i);
     }
 }
-    */
+    
 
 // move zeroes at the end
 let vals=[0,1,0,3,12,4]
@@ -87,3 +87,16 @@ while (result1.length<vals.length){
     result1.push(0);
 }
 console.log(result1,result1.sort())
+*/
+
+// merge arrays
+let arr1=[1,2,3]
+let arr2=[4,5,6]
+
+let merge1 =[...arr1,...arr2]
+
+let merge2=arr1.concat(arr2)
+console.log("way1 "+merge1)
+console.log("way2 "+merge2)
+
+
