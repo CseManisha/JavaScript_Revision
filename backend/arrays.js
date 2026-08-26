@@ -100,3 +100,7 @@ console.log("way1 "+merge1)
 console.log("way2 "+merge2)
 
 
+
+
+
+
