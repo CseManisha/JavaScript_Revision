@@ -26,21 +26,51 @@ for (let i=1;i<arr.length;i++){
     }
 }
 console.log(small_ele);
-*/
+
 
 //  problem 3:find the second largest number
 
 let arr=[10,25,5,40,30];
-let largest=arr[0];
-let second_largest=-Infinity;
+let max=arr[0];
+let secMax=-Infinity;
 
 for(let i=1;i<arr.length;i++){
-    if(arr[i]>largest){
-        second_largest=largest;
-        largest=arr[i];
-    }else if(arr[i]>second_largest && arr[i]!== largest){
-        second_largest=arr[i];
+    if(max<arr[i]){
+        secMax=max
+        max=arr[i];
+    } else if( secMax<arr[i]&& max!== arr[i]){
+        secMax=arr[i];
     }
     
 }
-console.log(second_largest)
+console.log(max)
+console.log(secMax)
+
+// second min
+
+let array=[4,6,7,2,3]
+let min=array[0];
+let sMin=+Infinity;
+for(let i=1;i<array.length;i++){
+    if(array[i]<min){
+        sMin=min;
+        min=array[i];
+    } else if( sMin>array[i]&& min!== array[i]){
+        sMin=array[i];
+    }
+}
+console.log(min)
+console.log(sMin);
+*/
+
+let newArr=[10,5,25,2,40,15];
+for(let i=0;i<newArr.length;i++){
+    for(let j=i+1;j<newArr.length;j++){
+        if(newArr[i]>newArr[j]){
+        let temp=newArr[i]
+        newArr[i]=newArr[j]
+        newArr[j]=temp;
+        }
+    }
+}
+console.log(newArr);
