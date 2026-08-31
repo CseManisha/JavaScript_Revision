@@ -61,7 +61,7 @@ for(let i=1;i<array.length;i++){
 }
 console.log(min)
 console.log(sMin);
-*/
+
 
 let newArr=[10,5,25,2,40,15];
 for(let i=0;i<newArr.length;i++){
@@ -74,3 +74,38 @@ for(let i=0;i<newArr.length;i++){
     }
 }
 console.log(newArr);
+*/
+
+// reverse an array
+let arr1=[1,2,3,4,5]
+let result =[];
+for(let i=arr1.length-1;i>=0;i--){
+   result.push(arr1[i]);
+}
+console.log(result);
+
+// find the sum of all elements in an array
+
+let arr2=[1,3,5,7,9,11]
+let totalSum=0;
+for(let i=0;i<arr2.length;i++){
+    totalSum+=arr2[i]
+}
+console.log(totalSum)
+
+// count even and odd number in array
+
+let even=0;
+let odd=0;
+let arr3=[1,2,3,4,5,6,7,8,9]
+for(let i=0;i<arr3.length;i++){
+    if(arr3[i]%2==0){
+    even+=1
+    } else{
+        odd+=1;
+    }
+}
+console.log(even,odd)
+
+// check wheather an array is sorted in ascending order
+
