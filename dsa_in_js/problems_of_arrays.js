@@ -108,4 +108,13 @@ for(let i=0;i<arr3.length;i++){
 console.log(even,odd)
 
 // check wheather an array is sorted in ascending order
+let arr4=[1,2,6,4,5]
+let isSorted=true;
+for(let i=0;i<arr4.length;i++){
+    if(arr4[i]>arr4[i+1]){
+        isSorted=false;
+        break;
+    }
+}
+console.log(isSorted)
 
