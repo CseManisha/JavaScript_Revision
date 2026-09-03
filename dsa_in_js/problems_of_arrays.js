@@ -74,7 +74,7 @@ for(let i=0;i<newArr.length;i++){
     }
 }
 console.log(newArr);
-*/
+
 
 // reverse an array
 let arr1=[1,2,3,4,5]
@@ -108,7 +108,7 @@ for(let i=0;i<arr3.length;i++){
 console.log(even,odd)
 
 // check wheather an array is sorted in ascending order
-let arr4=[1,2,6,4,5]
+let arr4=[1,2,3,4,5]
 let isSorted=true;
 for(let i=0;i<arr4.length;i++){
     if(arr4[i]>arr4[i+1]){
@@ -117,4 +117,43 @@ for(let i=0;i<arr4.length;i++){
     }
 }
 console.log(isSorted)
+*/
+
+// remove duplicate elements from an array
+let arr=[1,2,3,3,4,5,6];
+let newArry=[];
+for(let i=0;i<arr.length;i++){
+   
+    let alreadyExists=false;
+    for(let j=0 ; j<newArry.length ;j++){
+        if(arr[i]==newArry[j]){
+            alreadyExists=true;
+            break;
+        }
+    }
+
+    if(!alreadyExists){
+        newArry.push(arr[i]);
+    }
+   
+
+
+}
+console.log(newArry);
+// find the frequency of each element
+
+let nums=[10,33,56,43,67,33,10];
+
+for(let i=0;i<nums.length;i++){
+   let count=0;
+   for(let j=0;j<nums.length;j++){
+    if(nums[i] == nums[j]){
+        count=count+1;
+    }
+   }
+
+ console.log(nums[i],count);
+}
+
+
 
