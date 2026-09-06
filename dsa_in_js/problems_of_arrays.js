@@ -117,7 +117,7 @@ for(let i=0;i<arr4.length;i++){
     }
 }
 console.log(isSorted)
-*/
+
 
 // remove duplicate elements from an array
 let arr=[1,2,3,3,4,5,6];
@@ -155,5 +155,17 @@ for(let i=0;i<nums.length;i++){
  console.log(nums[i],count);
 }
 
+*/
+// Find the missing number in an array
+let arr1=[1,2,4,5]
+
+let n=5
+let exSum=n*(n+1)/2;
+let actualSum=0;
+for(let i=0;i<arr1.length;i++){
+   actualSum=actualSum+arr1[i];
+}
+let missNum=exSum-actualSum;
+console.log(missNum);
 
 
