@@ -4,8 +4,7 @@ const number=[1,2,3,4,5,6]
 const result=number.map((numArr)=>{
     return numArr+2;
 })
-console.log(result)
-
+console.log(result);
 let result2=number.filter((newCond)=>{
     return newCond >3
 })
@@ -36,3 +35,4 @@ let value=[12,3,5,7,8]
 value.sort((a,b)=>a-b);
 console.log(value)
 
+*/

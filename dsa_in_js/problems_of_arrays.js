@@ -156,6 +156,8 @@ for(let i=0;i<nums.length;i++){
 }
 
 */
+
+
 // Find the missing number in an array
 let arr1=[1,2,4,5]
 
@@ -167,5 +169,11 @@ for(let i=0;i<arr1.length;i++){
 }
 let missNum=exSum-actualSum;
 console.log(missNum);
+
+
+
+
+
+
 
 
